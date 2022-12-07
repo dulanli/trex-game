@@ -1,0 +1,633 @@
+/* Third party libraries */
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/* Apply to html and body by default*/
+html, body{
+	background-color: rgb(218, 218, 218); 
+	line-height: 1.8;
+	height: 100%;
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Home Page and About Us*/
+h1{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-top: 20;
+	width:500px;
+	margin: 25px;
+	padding: 25px;
+	border: 2px;
+	font-size: 33px;
+}
+
+p.home{
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 20;
+	width:500px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 2px;
+	font-size: 17px;
+}
+
+/* Home Page Only*/
+img.howto{
+	width: 135%;
+	border: 1px solid black;
+}
+
+.homepage{
+	min-height: 75%;
+	
+}
+
+/* Navigation Bar*/
+.navigation{
+    text-align: left;
+	color: #fff;
+	padding: 35px;
+	background: #BAB2B5;
+}
+
+.navi{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	background-color: black;
+	color: #fff;
+	padding: 10px 20px;
+    margin: 10px;
+	border-bottom: 2px solid red;
+	border-radius: 23px;
+
+}
+
+.selected{
+    width: 200px;
+    background-color: red;
+    padding: 10px 15px;
+}
+
+/* All a tag links*/
+a:hover{
+	opacity: 0.4;
+}
+
+/* Create an account text (home page)*/
+a.create{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	color: blue;
+	padding: 5px;
+    margin: 3px;
+
+}
+
+
+/* Login Page Only*/
+.container-login{
+	width: 300px;
+	text-align: center;
+	font-family: sans-serif;
+	margin: 9% auto;
+	color: black;
+}
+
+.container-login h2{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	border-bottom: 6px solid black;
+	margin-bottom: 25px;
+	padding: 5px;
+}
+
+.form-login{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 12px 0px;
+	text-align: center;
+	margin: 8px;
+	border-bottom: 2px solid #7D3C98;
+	border-radius: 25px;
+}
+
+.form-login.error{
+	border-bottom: 2px solid #e74c3c;
+}
+
+.form-login.success{
+	border-bottom: 2px solid #7D3C98;
+}
+
+.form-login i{
+	width: 35px;
+	text-align: center;
+}
+
+.form-login input{
+	border: none;
+	text-align: left;
+	outline: none;
+	background: none;
+	color: black;
+	font-size: 16px;
+	width: 100%;
+    text-align: center;
+	margin: 0px;
+}
+
+.btnlogin{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	width: 95%;
+	text-align: center;
+	border: 1px solid #8e44ad;
+	border-radius: 5px;
+	color: white;
+	background: #8e44ad;
+	padding: 6px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 15px;
+    position: relative;
+}
+
+.btnlogin:hover{
+	background-color: #414eed;
+	transition: 0.4s ease;	
+}
+
+.loginmsg {
+    color: #e74c3c;
+    font-size: 15px;
+    position:relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.loginmsg.error span {
+    visibility: visible;
+}
+
+.loginmsg.success span {
+    visibility: hidden;
+
+}
+
+.signuplink{
+	width: 240px;
+	height: 10px;
+	text-align: center;
+	font-family: sans-serif;
+	margin: 12% auto;
+	opacity: 1;
+	color: black;
+}
+
+.signup{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-decoration: none;
+	color: blue;
+	padding: 5px;
+    margin: 3px;
+}
+
+.signuplink li{
+	list-style: none;
+	padding-top: 10px;
+	align-items: center;
+}
+
+.signuplink li a{
+	color: blue;
+	font-size: 1;
+	text-decoration: none;
+}
+
+
+/* Registration/Sign Up Page Only */
+.container-regis {
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	width: 400px;
+    margin: 2% auto;
+    align-items: center;
+	justify-content: center;
+}
+
+.header-regis {
+	border-bottom: 1px solid #f7f7f7;
+	background-color: #f7f7f7;
+    margin: 0;
+	font-size: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+	padding: 1px;
+    text-align: center;
+}
+
+.form {
+	padding: 15px 30px;	
+}
+
+.form button {
+	background-color: #8e44ad;
+	border: 2px solid #8e44ad;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+    cursor: pointer;
+}
+
+.form button:hover{
+	background-color: #414eed;
+	transition: 0.4s ease;	
+}
+
+.form-regis {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-regis label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-regis input {
+    font-family: sans-serif;
+	border: 2px solid #f0f0f0;
+	border-radius: 6px;
+	display: block;
+	font-size: 14px;
+	padding: 6px;
+	width: 95%;
+}
+
+.form-regis input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-regis.success input {
+	border-color: #2ecc71;
+}
+
+.form-regis.error input {
+	border-color: #e74c3c;
+}
+
+.form-regis i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-regis.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-regis.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-regis.error span {
+	color: #e74c3c;
+    font-size: 14px;
+	position: absolute;
+    visibility: visible;
+}
+
+.form-regis.success span {
+    visibility: hidden;
+    position: absolute;
+
+}
+
+
+/* Leaderboard Page*/
+table {
+	border-collapse: collapse;
+	width: 60%;
+	margin: 300px;
+	padding: 25px;
+	margin-top: 70px;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
+}
+
+table th, table td {
+	border: 1px solid #DC143C;
+	padding: 10px;
+	vertical-align: top;
+}
+
+table th {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	background-color: #FA8072;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+table tbody{
+	background-color: #ffe6d0;
+}
+
+table tbody tr:hover{
+	background-color: #E6E6FA;
+  	cursor: pointer;
+}
+
+/* About Us Page */
+.about-section{
+	min-height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	padding: 100px 0;
+}
+
+.inner-container{
+	width: 50%;
+	background-image: url(../img/pic.png);
+	padding: 65px;
+}
+
+.inner-container h1{
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.about-text{
+	font-size: 13px;
+	width: 90%;
+	color: black;
+	line-height: 30px;
+	text-align: justify;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+/* Footer*/
+footer{
+	background: #303036;
+	color: #d3d3d3;
+	height: 400px;
+	position: relative;
+}
+
+.footer .footer-bottom{
+	background: #343a40;
+	color: #686868;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+}
+
+
+/* Game Page Only*/
+
+/* Profile Section */
+.profile {
+    width: 15%;
+    height: 10%;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    margin: 30px 30px;
+    align-items: center;
+	justify-content: center;
+    text-align: center;
+
+}
+
+.logout {
+    background-color: blue;
+	border: 2px solid black;
+	border-radius: 10px;
+	color: white;
+	display: block;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
+    cursor: pointer;
+}
+
+.logout:hover {         /* if button logout is hovered */
+    background-color: red;
+	transition: 0.4s ease;	
+}
+
+.userpro {      
+    color: black;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    
+}
+
+/* Game Section */
+.game {
+    background-image: url(../img/gameimgbg.png); 
+    background-size: cover;
+    width: 80%;
+    height: 450px;
+    border: 1px solid black;
+    position: absolute;
+    margin: 150px 150px;
+    background-color: #fff;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    align-items: center;
+	justify-content: center;
+    
+}
+
+.dino{
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    position: relative;
+    margin: 0px 50px;
+    top: 300px; 
+    
+}
+
+.dino img {
+    height: 50px;
+    width: 50px;
+}
+
+.jump{
+    animation: jumpAnimate 0.3s linear;  /* 300ms */
+}
+
+@keyframes jumpAnimate{     /* Animation for jumping */
+    0%,
+    100% {
+        top: 228px;
+    }
+    
+    40%,
+    50%,
+    60% {
+        top: 160px;
+    }
+    
+}
+
+.block {
+    height: 40px;
+    width: 15px;
+    position: relative;
+    top: 260px;
+    left: 1300px;
+
+}
+
+.block img {
+    height: 45px;
+    width: 50px;
+}
+
+.blockActive {
+    animation: block 4s linear infinite;
+
+}
+
+@keyframes block{       /* Animation for block moving - go to the left*/
+    
+    0%{
+        left: 1300px;
+    }
+    
+    100%{
+        left: -20px;
+    }
+    
+}
+
+.road {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+.roadActive {
+    animation: roadAnimate 1.5s linear infinite;
+
+}
+
+@keyframes roadAnimate {        /* Animation for road moving - go to the right*/
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -1500px;
+    }
+}
+
+.cloud {
+    visibility: hidden;
+    border-radius: 40px;
+    position: absolute;
+    margin: -20px 300px;
+    top: 30px;
+}
+
+.cloud img {
+    height: 80px;
+    width: 100px;
+    position: absolute;
+}
+
+.cloudActive {
+    visibility: visible;
+    animation: cloudAnimate 10s linear infinite;
+
+}
+
+@keyframes cloudAnimate {       /* Animation for moving clouds - go to the left */
+    0% {
+        right: -2500px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+/* Score tab */
+.scoring{
+    font-family: "Lucida Console", "Courier New", monospace;
+    display: block;
+	position: absolute;
+    margin: -80px 20px;
+}
+
+/* Game Over text*/
+.gameOver {
+    display: none;
+    position: absolute;
+    margin: 30px 420px;
+    width: 370px;
+    height: 80px;
+    color: #004c00;
+}
+
+.gameOverMsg1 {
+    font-size: 70px;
+}
+
+.gameOverMsg2 {
+    font-size: 30px;
+}
+
+.gameOverMsg3 {
+    margin: 0px 90px;
+    font-size: 17px;
+}
+
+
+	
+	
+
+
+
+
+
+
+
+
